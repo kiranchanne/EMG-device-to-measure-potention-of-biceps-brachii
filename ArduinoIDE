@@ -1,0 +1,30 @@
+
+
+int input = A0;  // Analog input
+int emgval = 0;       // store digitized EMG
+
+
+void setup()
+{
+  Serial.begin(9600);   // serial communication function baud rate is 9600
+}
+
+
+void loop()
+{
+  emgval = analogRead(input); // reading pin
+ 
+  // sending value to output display and formatting 
+Serial.println(emgval);
+Serial.println (" ");
+// checking conditions with a specified threshold value and producing output
+if (emgval>600)
+{
+Serial.print("the subject has flexed; The EMG value is: ");
+}
+else if (emgval < 600)
+{Serial.println ("the subject is relaxed; The EMG value is:  ");
+}
+// delay to allow proper reading
+delay(5000);
+}
