@@ -23,6 +23,6 @@ Three key phases:
 
 ---
 
-### 💻 Software Components
+### Software Components
 - **Arduino IDE:** For data acquisition and threshold-based detection of muscle contraction  
 - **LabVIEW:** For real-time signal visualization and analysis
